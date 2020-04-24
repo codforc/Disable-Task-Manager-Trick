@@ -14,8 +14,6 @@ def getFileDescription(windows_exe): # find description of exe for different lan
 taskmgrtitle = getFileDescription('C:\Windows\System32\Taskmgr.exe') 
 
 
-print(taskmgrtitle)
-
 def disableTaskmgr():
     while(1):
         taskmgr = win32gui.FindWindow(None,taskmgrtitle)
